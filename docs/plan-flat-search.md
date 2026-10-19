@@ -20,7 +20,7 @@
   - Description: Initialize SQLite database, create `Apartment` and `PriceHistory` models, run initial migration.
   - Files: `backend/prisma/schema.prisma`
   - Verification: Run `npx prisma db push` and verify SQLite file creation.
-- [ ] **Task 1.3: Apartments Controller & Service Facade Skeleton**
+- [x] **Task 1.3: Apartments Controller & Service Facade Skeleton**
   - Description: Create route handler `GET /api/apartments` returning paginated response DTO.
   - Files: `backend/src/apartments/apartments.controller.ts`, `backend/src/apartments/apartments.service.ts`
   - Verification: Automated integration test verifying `GET /api/apartments` returns 200 with typed JSON.
