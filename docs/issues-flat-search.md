@@ -4,7 +4,7 @@
 **Repository**: https://github.com/alekssawa/flat-999
 
 ## Milestone: Phase 1: Tracer Bullet
-- [ ] #1 - [flat-search] Task 1.1: Project Monorepo Structure & NestJS Bootstrap (https://github.com/alekssawa/flat-999/issues/1)
+- [x] #1 - [flat-search] Task 1.1: Project Monorepo Structure & NestJS Bootstrap (https://github.com/alekssawa/flat-999/issues/1)
 - [ ] #2 - [flat-search] Task 1.2: Prisma Schema & SQLite Database Initialization (https://github.com/alekssawa/flat-999/issues/2)
 - [ ] #3 - [flat-search] Task 1.3: Apartments Controller & Service Facade Skeleton (https://github.com/alekssawa/flat-999/issues/3)
 - [ ] #4 - [flat-search] Task 1.4: Next.js Frontend Skeleton & API Client (https://github.com/alekssawa/flat-999/issues/4)

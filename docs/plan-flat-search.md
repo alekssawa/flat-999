@@ -12,7 +12,7 @@
 **Touches:** backend / database / frontend  
 **Phase Completion Criteria:** Initial bootstrap of backend and frontend; `GET /api/apartments` returns seeded/dummy data to a simple Next.js page.  
 **Tasks:**
-- [ ] **Task 1.1: Project Monorepo Structure & NestJS Bootstrap**
+- [x] **Task 1.1: Project Monorepo Structure & NestJS Bootstrap**
   - Description: Scaffold `backend/` and `frontend/` folders, configure root scripts.
   - Files: `package.json`, `backend/package.json`, `backend/src/main.ts`
   - Verification: Backend starts on port 3001 and responds with health check.

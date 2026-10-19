@@ -1,0 +1,63 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Apartment {
+  id               String         @id
+  title            String
+  url              String
+  dealType         String         @default("SALE") // SALE, RENT_MONTH, RENT_DAY
+  authorType       String         @default("AGENCY") // PRIVATE, AGENCY, DEVELOPER
+  price            Float
+  currency         String         @default("EUR") // EUR, USD, MDL
+  priceEur         Float
+  pricePerMeterEur Float?
+  rooms            Int?           // 1, 2, 3, 4
+  area             Float?         // m²
+  floor            Int?
+  city             String?        // Кишинёв, etc.
+  district         String?        // Рышкановка, Ботаника, etc.
+  street           String?
+  images           String         @default("[]") // JSON string of photo URLs
+  publishedAt      DateTime
+  isFavorite       Boolean        @default(false)
+  isHidden         Boolean        @default(false)
+  userNotes        String?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  priceHistory     PriceHistory[]
+
+  @@index([priceEur])
+  @@index([rooms])
+  @@index([district])
+  @@index([authorType])
+  @@index([isFavorite])
+  @@index([isHidden])
+}
+
+model PriceHistory {
+  id          Int       @id @default(autoincrement())
+  apartmentId String
+  priceEur    Float
+  recordedAt  DateTime  @default(now())
+  apartment   Apartment @relation(fields: [apartmentId], references: [id], onDelete: Cascade)
+
+  @@index([apartmentId])
+}
+
+model SearchFilterConfig {
+  id          String    @id @default("default")
+  dealType    String    @default("SALE")
+  rooms       String    @default("[2]") // JSON array
+  cityId      Int       @default(12900)
+  districtIds String    @default("[937, 931, 916]") // JSON array
+  maxPriceEur Float?    @default(100000)
+  maxArea     Float?    @default(60)
+  lastSyncAt  DateTime?
+  updatedAt   DateTime  @updatedAt
+}
