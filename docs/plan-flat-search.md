@@ -24,7 +24,7 @@
   - Description: Create route handler `GET /api/apartments` returning paginated response DTO.
   - Files: `backend/src/apartments/apartments.controller.ts`, `backend/src/apartments/apartments.service.ts`
   - Verification: Automated integration test verifying `GET /api/apartments` returns 200 with typed JSON.
-- [ ] **Task 1.4: Next.js Frontend Skeleton & API Client**
+- [x] **Task 1.4: Next.js Frontend Skeleton & API Client**
   - Description: Setup Next.js with Tailwind CSS and an API client fetching from backend.
   - Files: `frontend/src/app/page.tsx`, `frontend/src/lib/api.ts`
   - Verification: `npm run build` passes in `frontend/`.

@@ -7,7 +7,7 @@
 - [x] #1 - [flat-search] Task 1.1: Project Monorepo Structure & NestJS Bootstrap (https://github.com/alekssawa/flat-999/issues/1)
 - [x] #2 - [flat-search] Task 1.2: Prisma Schema & SQLite Database Initialization (https://github.com/alekssawa/flat-999/issues/2)
 - [x] #3 - [flat-search] Task 1.3: Apartments Controller & Service Facade Skeleton (https://github.com/alekssawa/flat-999/issues/3)
-- [ ] #4 - [flat-search] Task 1.4: Next.js Frontend Skeleton & API Client (https://github.com/alekssawa/flat-999/issues/4)
+- [x] #4 - [flat-search] Task 1.4: Next.js Frontend Skeleton & API Client (https://github.com/alekssawa/flat-999/issues/4)
 
 ## Milestone: Phase 2: Core Scraper & Ingestion Engine
 - [ ] #5 - [flat-search] Task 2.1: 999.md GraphQL Client & Query Generator (https://github.com/alekssawa/flat-999/issues/5)
