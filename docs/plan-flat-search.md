@@ -16,7 +16,7 @@
   - Description: Scaffold `backend/` and `frontend/` folders, configure root scripts.
   - Files: `package.json`, `backend/package.json`, `backend/src/main.ts`
   - Verification: Backend starts on port 3001 and responds with health check.
-- [ ] **Task 1.2: Prisma Schema & Database Initialization**
+- [x] **Task 1.2: Prisma Schema & Database Initialization**
   - Description: Initialize SQLite database, create `Apartment` and `PriceHistory` models, run initial migration.
   - Files: `backend/prisma/schema.prisma`
   - Verification: Run `npx prisma db push` and verify SQLite file creation.
